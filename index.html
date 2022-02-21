@@ -1,0 +1,82 @@
+
+
+<!-- Created by The Young Programmer [TYP 💻] -->
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+    <head>
+        <title>Hangman the game of [2022]</title>
+    </head>   
+   <body>
+        <div id="home">
+            <div class="title">Hangman <br />Game</div>
+            <br />
+            <div class="button anim" onclick="startGame()">Play</div>
+            <!-- Trigger the modal with a button -->
+            <div type="button" class="button anim" data-toggle="modal" data-target="#myModal">INFORMATIONS </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" role="dialog">
+                <div class="modal-dialog">
+                                                  
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button"  class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">INFORMATIONS </h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Hangman game is about guessing words. <br /> Pick the correct letters and you will win.<br /> Otherwise you will lose.</p>
+                            <p> This is coded by Nemonet 👽 <br>aka The Young Programmer [TYP 👨‍💻] </p>
+                            <p>This was done in colloboration with the <a href="https://github.com/The-Young-Programmer/Hangman-_-ASM" target="_blank"> Hangman game in ASM</a><br />and kindly give me a star on <a href="https://github.com/The-Young-Programmer" target="_blank"> Github ⭐</a></p>
+                        </div>
+                        <div class="modal-footer">
+                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button anim"><a href="https://github.com/The-Young-Programmer/" target="_blank"> coded by [TYP 💻]</a></div>
+            <div class="button anim" onClick="share();" id="exit">Share</div>
+        </div>
+        <div id="result" class="h">
+            <div class="title" id="rT"></div>
+            <div class="body" id="rM"></div>
+            <div class="button anim" onclick="startGame()">Try Again?</div>
+        </div>     
+        <div id="pGame">
+            <div id="letter"></div>
+            <div id="game">
+                <div class="player">
+                    <div class="playerModel">
+                        <div class="head" data="false" id="g4"></div>
+                        <div class="body" data="false" l="false" r="false" id="g5"></div>
+                        <div class="foot" data="false" l="false" r="false" id="g6"></div>
+                    </div>
+                </div>
+                <div class="stang3" data="false" id="g3"></div>
+                <div class="stang2" data="false" id="g2"></div>
+                <div class="stang" data="false" id="g1"></div>
+                <div class="ground" data="false" id="g0"></div>
+                <div class="hintButton" data="false" id="hintButton" onclick="hint()">?</div>
+            </div>
+            <div id="tastatur">
+                <div id="moveKeybord">
+                    <div class="marg"></div>
+                </div>
+                <div id="keybord"></div>
+            </div>
+            <div class="hint" id="hint">
+                <div class="title">
+                    Hint
+                    <div class="exit" onclick="hintExit()">X</div>
+                </div>
+                <div class="body" id="hintText"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
