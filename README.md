@@ -51,7 +51,16 @@ Click here to view the 👉 <a href="https://the-young-programmer.github.io/Hang
 
 👉 kindly sponsor me for more programming code 
 
-👉 contact me for errors and suggestion concerning the Hangman Game <a href="mailto:the.young.programmer.team@gmail.com"/><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a> 
+👉 contact me for errors and suggestion concerning the Hangman Game
+
+
+ <a href="mailto:the.young.programmer.team@gmail.com"/><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a
+
+> <a href="https://www.instagram.com/t_nemonet"/><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/></a>
+
+<a href="https://twitter.com/tnemonet"/><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
+
+<a href="https://the-young-programmer.github.io/The-Young-Programmer/"/><img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=white"/></a>
 
 # 
 <a href="mailto:the.young.programmer.team@gmail.com"/><img src="https://az743702.vo.msecnd.net/cdn/kofi2.png?v=0"/></a>
