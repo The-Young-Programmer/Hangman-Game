@@ -1,5 +1,3 @@
-// Created by The Young Programmer [TYP 💻]
-
 var word = [
       ["Hangman", "That game you are playing right now."],
       ["Nemonet", "About the creator of this game."],
@@ -138,7 +136,6 @@ var word = [
 ];
 
 // Game keyboard
-var tastatur = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 // Game memory
 var select = 0;
@@ -165,6 +162,11 @@ window.onload = function () {
       );
       createTastur();
 };
+
+window.addEventListener("keydown", e=>{
+      if(e.isComposing || !gId("result").className || !tastatur.includes(e.key.toUpperCase())) return;
+      bTas(gId(`key-${e.key.toUpperCase()}`));
+});
 
 // Start game
 function startGame() {
@@ -232,16 +234,17 @@ function createWord() {
 function createTastur() {
       var tas = gId("keybord");
       tas.innerHTML = "";
-      for (a = 0; a < tastatur.length; a++) {
+      [...tastatur].forEach(a => {
             var b = document.createElement("span");
             b.className = "b";
-            b.innerText = tastatur[a];
+            b.id = `key-${a}`;
+            b.innerText = a;
             b.setAttribute("data", "");
             b.onclick = function () {
                   bTas(this);
             };
             tas.appendChild(b);
-      }
+      });
 }
 
 // Game check, If show next error / game end
